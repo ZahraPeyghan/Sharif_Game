@@ -18,6 +18,6 @@ public class LoadingScene : MonoBehaviour
       }
    }
    public void LoadGame(){
-      SceneManager.LoadScene("GamePage");
+      SceneManager.LoadScene("LearningPage");
    }
 }

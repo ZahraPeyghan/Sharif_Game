@@ -123,6 +123,106 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &5003807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5003808}
+  - component: {fileID: 5003811}
+  - component: {fileID: 5003810}
+  - component: {fileID: 5003809}
+  m_Layer: 0
+  m_Name: Arrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5003808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5003807}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.011, y: 0.153, z: 9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1830279622}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &5003809
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5003807}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 3d61224ac5d1f214ba4e9ddb084123c3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &5003810
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5003807}
+  m_Mesh: {fileID: 0}
+--- !u!114 &5003811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5003807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e1c27a48135394187911f4ba35d8c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stemLength: 0
+  stemWidth: 0.4
+  tipLength: 0.6
+  tipWidth: 0.9
 --- !u!1 &96623542
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,9 +234,10 @@ GameObject:
   - component: {fileID: 96623543}
   - component: {fileID: 96623544}
   - component: {fileID: 96623545}
+  - component: {fileID: 96623546}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,8 +323,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArmyNo: 0
+  PlayerArmyNo: 0
   TerritorySprite: {fileID: 0}
   ArmyNoTxt: {fileID: 0}
+--- !u!135 &96623546
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96623542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.15
+  m_Center: {x: 0.000000014901161, y: -0.0000009536743, z: 0}
 --- !u!1 &117503757
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,9 +350,10 @@ GameObject:
   - component: {fileID: 117503758}
   - component: {fileID: 117503759}
   - component: {fileID: 117503760}
+  - component: {fileID: 117503761}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -323,8 +439,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArmyNo: 0
+  PlayerArmyNo: 0
   TerritorySprite: {fileID: 0}
   ArmyNoTxt: {fileID: 0}
+--- !u!135 &117503761
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117503757}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.1499999
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &161761058
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,10 +747,10 @@ RectTransform:
   m_Father: {fileID: 1262646937}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: -311.99756}
-  m_SizeDelta: {x: 1080, y: 623.9951}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &187051464
 MonoBehaviour:
@@ -1303,7 +1433,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1476,9 +1606,11 @@ GameObject:
   - component: {fileID: 602798911}
   - component: {fileID: 602798913}
   - component: {fileID: 602798912}
-  m_Layer: 0
+  - component: {fileID: 602798914}
+  - component: {fileID: 602798915}
+  m_Layer: 6
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: pointer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1496,7 +1628,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1830279622}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &602798911
 MonoBehaviour:
@@ -1511,6 +1643,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Army_No_Txt: {fileID: 166116355}
+  nearclip: 25
+  Drag: 0
+  enemy: {fileID: 0}
+  group: []
+  angles:
+  - 20
+  - 0
+  - -20
+  soldiderPrefab: {fileID: 8872653692327809446, guid: f77a5d37225a11446ba5afedda4cba8c, type: 3}
+  SpreadTime: 0
 --- !u!33 &602798912
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1561,6 +1703,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &602798914
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602798909}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.49999994
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &602798915
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602798909}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &690934607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,9 +1997,10 @@ GameObject:
   - component: {fileID: 748519677}
   - component: {fileID: 748519678}
   - component: {fileID: 748519679}
+  - component: {fileID: 748519680}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1914,8 +2086,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArmyNo: 0
+  PlayerArmyNo: 0
   TerritorySprite: {fileID: 0}
   ArmyNoTxt: {fileID: 0}
+--- !u!135 &748519680
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748519676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.1500003
+  m_Center: {x: 0, y: 0.00000047683716, z: 0}
 --- !u!1 &806946885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3396,9 +3582,10 @@ GameObject:
   - component: {fileID: 1400666541}
   - component: {fileID: 1400666542}
   - component: {fileID: 1400666543}
+  - component: {fileID: 1400666544}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3484,8 +3671,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArmyNo: 0
+  PlayerArmyNo: 0
   TerritorySprite: {fileID: 0}
   ArmyNoTxt: {fileID: 0}
+--- !u!135 &1400666544
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400666540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.1500003
+  m_Center: {x: 0.000000029802322, y: -0.00000047683716, z: 0}
 --- !u!1 &1520644689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3575,9 +3776,10 @@ GameObject:
   - component: {fileID: 1550224574}
   - component: {fileID: 1550224575}
   - component: {fileID: 1550224576}
+  - component: {fileID: 1550224577}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3663,8 +3865,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArmyNo: 0
+  PlayerArmyNo: 0
   TerritorySprite: {fileID: 0}
   ArmyNoTxt: {fileID: 0}
+--- !u!135 &1550224577
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550224573}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.15
+  m_Center: {x: -0.0000009536743, y: 0.0000009536743, z: 0}
 --- !u!1 &1571498442
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,9 +3892,10 @@ GameObject:
   - component: {fileID: 1571498443}
   - component: {fileID: 1571498444}
   - component: {fileID: 1571498445}
+  - component: {fileID: 1571498446}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3764,8 +3981,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArmyNo: 0
+  PlayerArmyNo: 0
   TerritorySprite: {fileID: 0}
   ArmyNoTxt: {fileID: 0}
+--- !u!135 &1571498446
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571498442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.15
+  m_Center: {x: 0, y: 0.00000047683716, z: 0}
 --- !u!1 &1587732242
 GameObject:
   m_ObjectHideFlags: 0
@@ -4098,6 +4329,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1264632916}
+  - {fileID: 5003808}
   - {fileID: 602798910}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -4368,7 +4600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2012584511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4463,9 +4695,10 @@ GameObject:
   - component: {fileID: 2095767885}
   - component: {fileID: 2095767886}
   - component: {fileID: 2095767887}
+  - component: {fileID: 2095767888}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4526,7 +4759,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 85f82e46e3b71a041a9ceae73ba03e1f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4551,8 +4784,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArmyNo: 0
+  PlayerArmyNo: 0
   TerritorySprite: {fileID: 0}
   ArmyNoTxt: {fileID: 0}
+--- !u!135 &2095767888
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095767884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.15
+  m_Center: {x: 0.0000009536743, y: -0.0000019073486, z: 0}
 --- !u!1 &2110850995
 GameObject:
   m_ObjectHideFlags: 0
@@ -4564,9 +4811,10 @@ GameObject:
   - component: {fileID: 2110850996}
   - component: {fileID: 2110850997}
   - component: {fileID: 2110850998}
+  - component: {fileID: 2110850999}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4652,5 +4900,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArmyNo: 0
+  PlayerArmyNo: 0
   TerritorySprite: {fileID: 0}
   ArmyNoTxt: {fileID: 0}
+--- !u!135 &2110850999
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110850995}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.15
+  m_Center: {x: -0.0000009536743, y: 0.000000059604645, z: 0}
