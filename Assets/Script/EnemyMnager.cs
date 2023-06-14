@@ -12,10 +12,12 @@ public abstract class EnemyMnager : MonoBehaviour
     }
     public void UnderAttack(TextMeshPro ArmyNoTxt){
       if(ArmyNo > 0 ){
-        ArmyNoTxt.text = (ArmyNo--).ToString();
+        ArmyNo --;
+        ArmyNoTxt.text = ArmyNo.ToString();
       }
       else{
-        ArmyNoTxt.text = (PlayerArmyNo++).ToString();
+        PlayerArmyNo ++;
+        ArmyNoTxt.text = PlayerArmyNo.ToString();
       }
       if(ArmyNo == 0){
         TerritorySprite.color = new Color(0.38f , 0.73f , 0.82f);

@@ -1652,7 +1652,7 @@ MonoBehaviour:
   - 0
   - -20
   soldiderPrefab: {fileID: 8872653692327809446, guid: f77a5d37225a11446ba5afedda4cba8c, type: 3}
-  SpreadTime: 0
+  SpreadTime: 0.1
 --- !u!33 &602798912
 MeshFilter:
   m_ObjectHideFlags: 0

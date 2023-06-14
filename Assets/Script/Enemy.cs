@@ -10,5 +10,6 @@ public class Enemy : EnemyMnager
     {
         ArmyNoTxt = transform.GetChild(0).GetComponent<TextMeshPro>();
         ArmyNoTxt.text = ArmyNo.ToString();
+        TerritorySprite = transform.parent.GetComponent<SpriteRenderer>();
     }
 }

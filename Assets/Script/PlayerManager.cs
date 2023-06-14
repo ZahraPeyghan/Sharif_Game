@@ -72,7 +72,7 @@ public class PlayerManager : MonoBehaviour
         var maxSoldierPerBatch = 3;
         while(sildierNo < PlayerFakeSoldierNo){
             var soldierToGenerate = Mathf.Min(maxSoldierPerBatch , PlayerFakeSoldierNo - sildierNo);
-            for(int i=0; i< maxSoldierPerBatch; i++){
+            for(int i=0; i< soldierToGenerate; i++){
                 var newSoldier = Instantiate(soldiderPrefab , transform.position , Quaternion.identity);
                 group.Add(newSoldier.gameObject);
                 newSoldier.ExecuteOrder(enemy.transform.position , angles[i]);
@@ -82,5 +82,10 @@ public class PlayerManager : MonoBehaviour
             Army_No_Txt.text = Army_No.ToString();
             yield return new WaitForSecondsRealtime(SpreadTime);
         }
+        Invoke("RunGatherTheArmy" , 1f);
+    }
+    private void RunGatherTheArmy(){
+        Ie_fill_army = FillTheArmy();
+        StartCoroutine(Ie_fill_army);
     }
 }

@@ -12,18 +12,17 @@ public abstract class Attack : MonoBehaviour
        var offsetFinalTarget = Vector3.Distance(_finalPos , transform.position);
        var offsetTarget = Vector3.Distance(_targetPos , transform.position);
        if(offsetTarget > 0.3f && !SpreadCompleted){
-          transform.position = Vector3.MoveTowards(transform.position, _targetPos , Time.deltaTime * 2f);
+          transform.position = Vector3.MoveTowards(transform.position, _targetPos , Time.deltaTime * 1.5f);
        }
        else{
         SpreadCompleted = true;
         if(offsetFinalTarget > 1.5f){
-            for(int i =0; i< PlayerManager.pleyerManagerInstance.group.Count; i++){
+            for(int i =0; i< PlayerManager.pleyerManagerInstance.group.Count; i++)
                 _distance = transform.position - PlayerManager.pleyerManagerInstance.@group.ElementAt(i).transform.position;
-                transform.position = Vector3.MoveTowards(transform.position, _finalPos + _distance * soldierDis,Time.deltaTime * 3f);
-            }
+                transform.position = Vector3.MoveTowards(transform.position, _finalPos + _distance * soldierDis,Time.deltaTime * 1f);
         }
         else{
-            transform.position = Vector3.MoveTowards(transform.position, _finalPos , Time.deltaTime * 1.5f);
+            transform.position = Vector3.MoveTowards(transform.position, _finalPos , Time.deltaTime * 1f);
         }
     }
        
