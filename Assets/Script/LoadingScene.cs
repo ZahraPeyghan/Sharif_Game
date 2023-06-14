@@ -5,8 +5,10 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 public class LoadingScene : MonoBehaviour
 {
-   float time , second;
+   float time , second, LoadingValue ;
+   int LoadingTime;
    public Image FillImage;
+   public Text LoadingText;
    void Start(){
       second=5;
       Invoke("LoadGame",5f);
@@ -14,7 +16,9 @@ public class LoadingScene : MonoBehaviour
    void Update(){
       if(time<5){
          time += Time.deltaTime;
-         FillImage.fillAmount = time/second;
+        LoadingValue = FillImage.fillAmount = time/second;
+        LoadingTime = (int)(LoadingValue * 100f);
+        LoadingText.text = "% " + LoadingTime;
       }
    }
    public void LoadGame(){
