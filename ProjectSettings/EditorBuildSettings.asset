@@ -7,14 +7,62 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/SplashPage.unity
     guid: 460c2ec969d5c7d42bc27f13aa3d2f14
   - enabled: 1
-    path: Assets/Scenes/LearningPage.unity
+    path: Assets/Scenes/LearningPage1.unity
     guid: b3559d404b74c954d9e6ab7ee0207ab4
   - enabled: 1
     path: Assets/Scenes/Story1Page.unity
     guid: 034b520ca774ab64a9b390ebb4fad1c4
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/LoadingPage.unity
+    guid: 845c9cefe8c267f46b07575b6c818685
+  - enabled: 1
+    path: Assets/Scenes/PlayPage.unity
+    guid: 231dd23cd71b56643b97690fda4500e7
+  - enabled: 1
+    path: Assets/Scenes/MapPage.unity
+    guid: 1ea8df97718a9fa40bdc204e280b30e3
+  - enabled: 1
+    path: Assets/Scenes/LearningPage2.unity
+    guid: 2c29c0e2f09360b46a80264663304ae3
+  - enabled: 1
+    path: Assets/Scenes/LearningPage3.unity
+    guid: 38a3bf4e9f6cc4e4181493df7e5b2980
+  - enabled: 1
+    path: Assets/Scenes/LearningPage4.unity
+    guid: 1354b2456ebabb3429e6a7f36ed30b49
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/ShopPage.unity
+    guid: 6ba9739cfae01244e93660b1fde3dc54
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Story2Page.unity
+    guid: 82ad3679ee189f046a1771f5bc90921b
+  - enabled: 1
+    path: Assets/Scenes/Story3Page.unity
+    guid: e4e207593d1dc1f45b420eae720113f6
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 6cedaf3014c25504ba09daedc041c079
   m_configObjects: {}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public abstract class EnemyMnager : MonoBehaviour
 {
@@ -23,7 +24,6 @@ public abstract class EnemyMnager : MonoBehaviour
       if(ArmyNo == 0){
         TerritorySprite.color = new Color(0.38f , 0.73f , 0.82f);
         gameObject.GetComponent<SpriteRenderer>().color = new Color(0.44f , 0.95f , 0.75f);
-        SceneManager.LoadScene("Story1Page");
       }
     }
 }
