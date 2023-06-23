@@ -21,6 +21,6 @@ float time , second, LoadingValue ;
       }
    }
    public void LoadGame(){
-      SceneManager.LoadScene("PlayPage");
+      SceneManager.LoadScene("Play1");
    }
 }

@@ -101,11 +101,11 @@ public abstract class EnemyMnager : MonoBehaviour
         }
     }
     IEnumerator TimeTranslation6(){
-      while(endenemy.EndEnemy5){
+      while(endenemy.EndEnemy6){
         yield return new WaitForSeconds(1.3f);
         Tranation1.SetActive(false);
         Tranation2.SetActive(false);
-        SceneManager.LoadScene("PlayGame");
+        SceneManager.LoadScene("PlayPage");
         }
     }
 }

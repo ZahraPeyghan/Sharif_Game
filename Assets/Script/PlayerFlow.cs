@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerFlow : MonoBehaviour
 {  
-     public  AudioSource Sound1;
-     public  AudioSource Sound2;
      public GameObject Background;
      public GameObject ShopButton;
      public GameObject PlayButton;
@@ -24,7 +22,7 @@ public class PlayerFlow : MonoBehaviour
      public GameObject NextLern;
      public GameObject BackLern;
      public void NextBtn(){
-      Sound1.Play();
+      AudioManager.Instance.PlaySFX("Robot1");
       BackLern.SetActive(true);
       transform.position = new Vector3(Background.transform.position.x+3,transform.position.y,transform.position.z);
       ShopButton.SetActive(true);
@@ -38,7 +36,7 @@ public class PlayerFlow : MonoBehaviour
       EctorText.SetActive(false);
    }
       public void BackBtn(){
-      Sound2.Play();
+      AudioManager.Instance.PlaySFX("Robot2");
       transform.position = new Vector3(Background.transform.position.x-3,transform.position.y,transform.position.z);
       ShopButton.SetActive(false);
       MapButton.SetActive(false);
@@ -54,7 +52,7 @@ public class PlayerFlow : MonoBehaviour
       SceneManager.LoadScene("ShopPage");
    }
    public void PlayBtn(){
-      SceneManager.LoadScene("Play1");
+      SceneManager.LoadScene("LoadingPage");
    }
    public void MapBtn(){
       SceneManager.LoadScene("MapPage");
