@@ -1693,6 +1693,8 @@ MonoBehaviour:
   Tranation2: {fileID: 1563404913}
   endenemy: {fileID: 904888914}
   WinPanel: {fileID: 0}
+  LevelText1: {fileID: 680820723}
+  LevelText2: {fileID: 503808290}
   ArmyNoTxt: {fileID: 0}
 --- !u!212 &904888913
 SpriteRenderer:
@@ -1762,8 +1764,8 @@ MonoBehaviour:
   EndEnemy2: 0
   EndEnemy3: 0
   EndEnemy4: 0
-  EndEnemy5: 1
-  EndEnemy6: 1
+  EndEnemy5: 0
+  EndEnemy6: 0
 --- !u!1 &1116174240
 GameObject:
   m_ObjectHideFlags: 0
@@ -3712,6 +3714,8 @@ MonoBehaviour:
   Tranation2: {fileID: 0}
   endenemy: {fileID: 0}
   WinPanel: {fileID: 0}
+  LevelText1: {fileID: 0}
+  LevelText2: {fileID: 0}
   ArmyNoTxt: {fileID: 0}
 --- !u!212 &2037240028
 SpriteRenderer:

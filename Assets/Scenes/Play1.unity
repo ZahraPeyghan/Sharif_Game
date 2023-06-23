@@ -266,6 +266,8 @@ MonoBehaviour:
   Tranation2: {fileID: 1563404913}
   endenemy: {fileID: 0}
   WinPanel: {fileID: 0}
+  LevelText1: {fileID: 0}
+  LevelText2: {fileID: 0}
   ArmyNoTxt: {fileID: 0}
 --- !u!212 &270467081
 SpriteRenderer:
@@ -2988,6 +2990,8 @@ MonoBehaviour:
   Tranation2: {fileID: 1563404913}
   endenemy: {fileID: 0}
   WinPanel: {fileID: 0}
+  LevelText1: {fileID: 0}
+  LevelText2: {fileID: 0}
   ArmyNoTxt: {fileID: 0}
 --- !u!212 &1531521070
 SpriteRenderer:
@@ -3883,6 +3887,8 @@ MonoBehaviour:
   Tranation2: {fileID: 1563404913}
   endenemy: {fileID: 2002720677}
   WinPanel: {fileID: 0}
+  LevelText1: {fileID: 680820723}
+  LevelText2: {fileID: 503808290}
   ArmyNoTxt: {fileID: 0}
 --- !u!212 &2002720680
 SpriteRenderer:

@@ -58,6 +58,7 @@ public class PlayerFlow : MonoBehaviour
       SceneManager.LoadScene("MapPage");
    }
    public void SettingBtn(){
+      EctorText.SetActive(false);
       SettingPanel.SetActive(true);
    }
    public void WelcomPageLern(){

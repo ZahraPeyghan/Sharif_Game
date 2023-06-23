@@ -3868,6 +3868,8 @@ MonoBehaviour:
   Tranation2: {fileID: 1563404913}
   endenemy: {fileID: 1763685304}
   WinPanel: {fileID: 2056116930}
+  LevelText1: {fileID: 680820723}
+  LevelText2: {fileID: 503808290}
   ArmyNoTxt: {fileID: 0}
 --- !u!212 &1763685307
 SpriteRenderer:

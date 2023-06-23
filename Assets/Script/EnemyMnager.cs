@@ -13,6 +13,8 @@ public abstract class EnemyMnager : MonoBehaviour
     public GameObject Tranation2;
     public EndEnemy endenemy;
     public GameObject WinPanel;
+    public GameObject LevelText1;
+    public GameObject LevelText2;
     void Awake(){
         ArmyNo = Random.Range(10 , 25);
     }
@@ -31,31 +33,43 @@ public abstract class EnemyMnager : MonoBehaviour
         if(endenemy.EndEnemy1 == true){
         Tranation1.SetActive(true);
         Tranation2.SetActive(true);
+        LevelText1.SetActive(false);
+        LevelText2.SetActive(false);
         StartCoroutine(TimeTranslation1());
         }
         if(endenemy.EndEnemy2 == true){
         Tranation1.SetActive(true);
         Tranation2.SetActive(true);
+        LevelText1.SetActive(false);
+        LevelText2.SetActive(false);
         StartCoroutine(TimeTranslation2());
         }
         if(endenemy.EndEnemy3 == true){
         Tranation1.SetActive(true);
         Tranation2.SetActive(true);
+        LevelText1.SetActive(false);
+        LevelText2.SetActive(false);
         StartCoroutine(TimeTranslation3());
         }
         if(endenemy.EndEnemy4 == true){
         Tranation1.SetActive(true);
         Tranation2.SetActive(true);
+        LevelText1.SetActive(false);
+        LevelText2.SetActive(false);
         StartCoroutine(TimeTranslation4());
         }
         if(endenemy.EndEnemy5 == true){
         Tranation1.SetActive(true);
         Tranation2.SetActive(true);
+        LevelText1.SetActive(false);
+        LevelText2.SetActive(false);
         StartCoroutine(TimeTranslation5());
         }
         if(endenemy.EndEnemy6 == true){
         Tranation1.SetActive(true);
         Tranation2.SetActive(true);
+        LevelText1.SetActive(false);
+        LevelText2.SetActive(false);
         StartCoroutine(TimeTranslation6());
         }
       }
