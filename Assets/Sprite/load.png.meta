@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c84fdce53288c024fbc50ba7babf1bfa
+guid: 28a3e8bc588cef44cae1191045c97fdd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,17 +113,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Loading1_0
+      name: load_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 105
-        width: 1080
-        height: 1815
+        x: 58
+        y: 41
+        width: 490
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ee0656885bcb8140863ef1fb1cc079f
-      internalID: 516981347
+      spriteID: 8c6590e178172164f9231170554dd0dd
+      internalID: -1375636327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Loading1_1
+      name: load_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 597
-        height: 105
+        x: 6
+        y: 6
+        width: 325
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ea9ca9ba4a0be043a0ac636d1f94f8d
-      internalID: 597563749
+      spriteID: 4dc48513c0f1a6148805a0532c61e2fe
+      internalID: 429985762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Loading1_2
+      name: load_2
       rect:
         serializedVersion: 2
-        x: 597
-        y: 0
-        width: 483
-        height: 105
+        x: 332
+        y: 1
+        width: 240
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1964e4c93e3a234e8cfc54e39595fc6
-      internalID: -235369115
+      spriteID: 1d00c5500054be749b0cd1234eff4352
+      internalID: -1273825372
       vertices: []
       indices: 
       edges: []
@@ -190,9 +202,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Loading1_0: 516981347
-      Loading1_1: 597563749
-      Loading1_2: -235369115
+      load_0: -1375636327
+      load_1: 429985762
+      load_2: -1273825372
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

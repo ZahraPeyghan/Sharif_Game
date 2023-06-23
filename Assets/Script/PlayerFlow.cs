@@ -54,7 +54,7 @@ public class PlayerFlow : MonoBehaviour
       SceneManager.LoadScene("ShopPage");
    }
    public void PlayBtn(){
-      SceneManager.LoadScene("LoadingPage");
+      SceneManager.LoadScene("Play1");
    }
    public void MapBtn(){
       SceneManager.LoadScene("MapPage");

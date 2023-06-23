@@ -8,7 +8,7 @@ public class LoadingScene : MonoBehaviour
    float time , second, LoadingValue ;
    int LoadingTime;
    public Image FillImage;
-   public Text LoadingText;
+  // public Text LoadingText;
    void Start(){
       second=5;
       Invoke("LoadGame",5f);
@@ -18,7 +18,7 @@ public class LoadingScene : MonoBehaviour
          time += Time.deltaTime;
         LoadingValue = FillImage.fillAmount = time/second;
         LoadingTime = (int)(LoadingValue * 100f);
-        LoadingText.text = "% " + LoadingTime;
+       // LoadingText.text = "% " + LoadingTime;
       }
    }
    public void LoadGame(){

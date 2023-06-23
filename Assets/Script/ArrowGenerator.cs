@@ -10,6 +10,7 @@ public class ArrowGenerator : MonoBehaviour
     public float stemWidth;
     public float tipLength;
     public float tipWidth;
+    public HandManager handmanager;
     [System.NonSerialized]
     public List<Vector3> verticesList;
     [System.NonSerialized]
@@ -29,6 +30,7 @@ public class ArrowGenerator : MonoBehaviour
     void Update()
     {
         if(PlayerManager.pleyerManagerInstance.Drag){
+        handmanager.HandPic.SetActive(false);
         GenerateArrow();
         var dir = Input.mousePosition - cam.WorldToScreenPoint(transform.position);
         var angle = Mathf.Atan2(dir.y,dir.x) * Mathf.Rad2Deg;
